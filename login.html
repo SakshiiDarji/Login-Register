@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to our page</title>
+    <meta property="type" content="website">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- linking css file-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <h2 class = logo>WebsiteName</h2>
+    <nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <button type="submit" class="login-popup" onclick="goToLogin()">Login</button>
+
+    </nav>
+  </header>
+    
+
+  <div class="wrapper">
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#" name="formLogin" onsubmit="return validateLogin()">
+        <div class="input-box">
+          <span class="icon">
+            <img src="icons/mail-icon.png">
+          </span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <img src="icons/password-icon.png">
+          </span>
+          <input type="password" id="passwordLogin" required>
+          <label>Password</label>
+        </div>
+        <button type="submit" class="btn" name="loginbtn">Login</button>
+        <div class="regester">
+          <p>
+            Don't have an account? 
+            <a href="register.html" class="register-link">Register Now</a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <script src="js/loginScript.js"></script>
+
+
+  
+</body>
+</html>

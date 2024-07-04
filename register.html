@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Page</title>
+    
+	<meta property="type" content="website">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- linking css file-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <h2 class = logo>WebsiteName</h2>
+    <nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <button type="submit" class="login-popup" onclick="goToLogin()">Login</button>
+
+    </nav>
+  </header>
+    
+
+  <div class="wrapper">
+    
+    <div class="form-box register">
+      <h2>Registration</h2>
+      <form action="#" name="registrationForm" onsubmit="return validateRegistration()">
+        <div class="input-box">
+          <span class="icon">
+            <img src="icons/mail-icon.png">
+          </span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <img src="icons/password-icon.png">
+          </span>
+          <input type="password" id="passwordReg" required>
+          <label>Password</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <img src="icons/password-icon.png">
+          </span>
+          <input type="password" id="confirmPassword" required>
+          <label>Confirm Password</label>
+        </div>
+        <div class="agree">
+          <label><input type="checkbox" id="agreeCheckbox">
+            I agree to the terms and conditions</label>
+        </div>
+        <button type="submit" class="btn" name="registerbtn">Register</button>
+        <div class="regester">
+          <p>
+            Already have an Account? 
+            <a href="login.html" class="login-link">Login Now</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="js/registerScript.js"></script>
+
+
+  
+</body>
+</html>
